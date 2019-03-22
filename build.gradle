@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group 'fun.oop'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+String jacksonVersion = '2.9.2'
+String okHttpVersion = '3.7.0'
+
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-joda:' + jacksonVersion
+    compile 'com.squareup.okhttp3:okhttp:' + okHttpVersion
+    compile 'com.squareup.okhttp3:logging-interceptor:' + okHttpVersion
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.9'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
+    compile 'com.squareup.retrofit2:converter-jackson:2.2.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.google.guava:guava:22.0'
+    compile 'commons-codec:commons-codec:1.10'
+    compile 'org.apache.commons:commons-lang3:3.0'
+    compile 'com.baidu.unbiz:fluent-validator:1.0.9'
+    compile 'com.baidu.unbiz:fluent-validator-jsr303:1.0.9'
+    compile 'org.springframework:spring-beans:3.2.9.RELEASE'
+    testCompile 'junit:junit:4.12'
+}
