@@ -31,6 +31,8 @@ dependencies {
     compile 'org.apache.commons:commons-lang3:3.0'
     compile 'com.baidu.unbiz:fluent-validator:1.0.9'
     compile 'com.baidu.unbiz:fluent-validator-jsr303:1.0.9'
-    compile 'org.springframework:spring-beans:3.2.9.RELEASE'
+    compile ('org.springframework:spring-beans:3.2.9.RELEASE'){
+            exclude module: 'commons-logging'
+        }
     testCompile 'junit:junit:4.12'
 }
