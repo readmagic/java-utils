@@ -15,7 +15,11 @@ repositories {
     mavenCentral()
 }
 
+configurations.all {
+    exclude module: 'log4j'
+    exclude module: 'slf4j-log4j12'
 
+}
 dependencies {
     implementation 'ch.qos.logback:logback-core:1.2.3'
     implementation 'ch.qos.logback:logback-classic:1.2.3'
@@ -31,14 +35,10 @@ dependencies {
     implementation 'com.google.guava:guava:22.0'
     implementation 'commons-codec:commons-codec:1.10'
     implementation 'org.apache.commons:commons-lang3:3.0'
-    compile ('com.baidu.unbiz:fluent-validator:1.0.9'){
-                exclude module: 'log4j'
-            }
-    compile ('com.baidu.unbiz:fluent-validator-jsr303:1.0.9'){
-                exclude module: 'log4j'
-            }
-    compile ('org.springframework:spring-beans:3.2.9.RELEASE'){
-            exclude module: 'commons-logging'
-        }
+    compile('com.baidu.unbiz:fluent-validator:1.0.9')
+    compile('com.baidu.unbiz:fluent-validator-jsr303:1.0.9')
+    compile('org.springframework:spring-beans:3.2.9.RELEASE') {
+        exclude module: 'commons-logging'
+    }
     testCompile 'junit:junit:4.12'
 }
