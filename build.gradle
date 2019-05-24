@@ -17,20 +17,28 @@ repositories {
 
 
 dependencies {
-    compile 'com.fasterxml.jackson.datatype:jackson-datatype-joda:' + jacksonVersion
-    compile 'com.squareup.okhttp3:okhttp:' + okHttpVersion
-    compile 'com.squareup.okhttp3:logging-interceptor:' + okHttpVersion
-    compile 'com.squareup.retrofit2:retrofit:2.2.0'
-    compile 'io.reactivex.rxjava2:rxjava:2.0.9'
-    compile 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
-    compile 'com.squareup.retrofit2:converter-jackson:2.2.0'
-    compile 'com.squareup.retrofit2:converter-scalars:2.2.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
-    compile 'com.google.guava:guava:22.0'
-    compile 'commons-codec:commons-codec:1.10'
-    compile 'org.apache.commons:commons-lang3:3.0'
-    compile 'com.baidu.unbiz:fluent-validator:1.0.9'
-    compile 'com.baidu.unbiz:fluent-validator-jsr303:1.0.9'
-    compile 'org.springframework:spring-beans:3.2.9.RELEASE'
+    implementation 'ch.qos.logback:logback-core:1.2.3'
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-joda:' + jacksonVersion
+    implementation 'com.squareup.okhttp3:okhttp:' + okHttpVersion
+    implementation 'com.squareup.okhttp3:logging-interceptor:' + okHttpVersion
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.9'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.google.guava:guava:22.0'
+    implementation 'commons-codec:commons-codec:1.10'
+    implementation 'org.apache.commons:commons-lang3:3.0'
+    compile ('com.baidu.unbiz:fluent-validator:1.0.9'){
+                exclude module: 'log4j'
+            }
+    compile ('com.baidu.unbiz:fluent-validator-jsr303:1.0.9'){
+                exclude module: 'log4j'
+            }
+    compile ('org.springframework:spring-beans:3.2.9.RELEASE'){
+            exclude module: 'commons-logging'
+        }
     testCompile 'junit:junit:4.12'
 }
