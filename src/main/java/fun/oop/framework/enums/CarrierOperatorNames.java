@@ -10,7 +10,7 @@ import java.util.List;
 public enum CarrierOperatorNames {
     CMCC("CMCC", "中国移动"),
     CUCC("CUCC", "中国联通"),
-    CTCC("CTCC", "电信"),
+    CTCC("CTCC", "中国电信"),
     VIRTUAL("VIRTUAL","虚拟运营商");
 
     public final String name;

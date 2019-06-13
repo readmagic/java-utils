@@ -11,6 +11,7 @@ import java.util.Map;
  */
 public class ParamUtil {
 
+    private ParamUtil(){}
     /**
      * 将url参数转换成map
      *

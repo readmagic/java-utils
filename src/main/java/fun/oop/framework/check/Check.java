@@ -143,7 +143,7 @@ public class Check implements Cloneable {
 
     @FunctionalInterface
     public interface Action0 {
-        public abstract void call() throws Exception;
+        void call() throws Exception;
     }
 
     @FunctionalInterface

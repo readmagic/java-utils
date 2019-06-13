@@ -1,11 +1,6 @@
 package fun.oop.framework.util.date;
 
-/**
- * Created by IntelliJ IDEA.
- * User: bin.yu
- * Date: 2017/9/28 0028
- * Time: 下午 16:10
- */
+
 
 public enum Week {
     MONDAY("星期一", "Monday", "Mon.", 1), TUESDAY("星期二", "Tuesday", "Tues.", 2), WEDNESDAY(

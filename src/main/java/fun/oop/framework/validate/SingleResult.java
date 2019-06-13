@@ -1,11 +1,6 @@
 package fun.oop.framework.validate;
 
-/**
- * Created by IntelliJ IDEA.
- * User: bin.yu
- * Date: 2017/10/11 0011
- * Time: 下午 18:52
- */
+
 public class SingleResult {
 
     /**

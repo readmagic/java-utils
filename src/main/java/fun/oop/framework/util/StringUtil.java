@@ -10,6 +10,7 @@ import java.util.UUID;
 
 
 public class StringUtil extends StringUtils {
+    private StringUtil(){}
 
     private static final char[] DIGITS = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
             .toCharArray();
@@ -110,7 +111,6 @@ public class StringUtil extends StringUtils {
         return result;
     }
 
-    // FIXME 待补
 
     // ==========================================================================
     // 格式替换。

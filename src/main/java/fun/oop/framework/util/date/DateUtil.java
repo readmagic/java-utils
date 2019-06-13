@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 public class DateUtil {
+    private DateUtil(){}
 
     private static final ThreadLocal<SimpleDateFormat> threadLocal = new ThreadLocal();
 

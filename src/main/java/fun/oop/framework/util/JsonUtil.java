@@ -12,6 +12,7 @@ import java.util.Map;
 
 
 public class JsonUtil {
+    private JsonUtil(){}
 
     private static ObjectMapper mapper = new ObjectMapper();
     private static Gson gson = new Gson();

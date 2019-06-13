@@ -2,6 +2,8 @@ package fun.oop.framework.exception;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertTrue;
+
 
 public class ExceptionTest {
 
@@ -10,8 +12,8 @@ public class ExceptionTest {
         try {
             a();
         }catch (BusinessAssertException ex){
-            System.out.println(ex.getErrorCode());
-            System.out.println(ex.getMessage());
+            assertTrue(2000==ex.getErrorCode());
+            assertTrue("错误测试".equals(ex.getMessage()));
         }
 
     }

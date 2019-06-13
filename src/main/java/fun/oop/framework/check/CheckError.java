@@ -139,37 +139,6 @@ public final class CheckError implements Serializable {
         }
     }
 
-    /**
-     * <p>
-     * <pre>
-     * class ShopPO{
-     *     @NotEmpty String name;
-     *     @NotEmpty String address;
-     *     @Valid ShopManager manager;
-     * }
-     * class ShopManager{
-     *     @NotEmpty String name;
-     *     @NotEmpty String phone;
-     * }
-     *
-     * {
-     *   "code": 422,
-     *   "message": "validation.error.shopPO",
-     *   "errors": [
-     *     {
-     *       "messageKey": "NotEmpty.shopPO.name",
-     *       "messageArgs":[],
-     *       "field": "manager.phone",
-     *       "code": "NotEmpty"
-     *     },
-     *   {
-     *     "messageKey": "NotEmpty.shopPO.name",
-     *     "messageArgs":[],
-     *     "field": "name",
-     *     "code": "NotEmpty"
-     *   }]
-     * }
-     */
     public static final class FieldError implements Serializable {
         private static final long serialVersionUID = 1L;
         private String field;

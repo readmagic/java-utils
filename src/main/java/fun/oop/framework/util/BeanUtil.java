@@ -17,6 +17,7 @@ import java.util.*;
  */
 public class BeanUtil extends org.springframework.beans.BeanUtils {
 
+    private BeanUtil(){}
 
     public static void copyNotNullProperties(Object source, Object target, String[] ignoreProperties) throws BeansException {
         copyNotNullProperties(source, target, null, ignoreProperties);

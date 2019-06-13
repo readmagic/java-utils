@@ -10,6 +10,7 @@ import java.util.Map;
 
 public class XmlUtil {
 
+    private XmlUtil(){}
 
     @SuppressWarnings("unchecked")
     public static <T> T xml2Object(Class<T> clazz, String xml) {

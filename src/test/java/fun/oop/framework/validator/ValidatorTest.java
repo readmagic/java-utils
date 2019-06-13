@@ -6,6 +6,8 @@ import fun.oop.framework.validate.validator.IsMobilePhoneValidator;
 import org.hibernate.validator.constraints.NotBlank;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 
 public class ValidatorTest {
 
@@ -14,7 +16,7 @@ public class ValidatorTest {
         UserEntity user = new UserEntity();
         user.setPhone("132222");
         user.setIdCardNo("31022819910614221X");
-        System.out.println(FluentValidator.singleError(user).getError());
+        assertEquals("电话号码不合法",FluentValidator.singleError(user).getError());
     }
 
     class UserEntity {

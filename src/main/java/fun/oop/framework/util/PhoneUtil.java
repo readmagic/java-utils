@@ -6,9 +6,7 @@ import fun.oop.framework.validate.validator.IsMobilePhoneValidator;
 
 public class PhoneUtil {
 
-    private PhoneUtil() {
-
-    }
+    private PhoneUtil() { }
 
     /**
      * 判断传入的参数号码为哪家运营商
